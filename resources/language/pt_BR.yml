@@ -1,0 +1,200 @@
+---
+# NÃO EDITE ESTE VALOR, USO INTERNO APENAS. #
+lang-version: 4
+
+# Consulte https://minecraft.gamepedia.com/Formatting_codes para códigos de formatação, você pode substituir o símbolo '§' por '&'
+
+# Títulos do Menu AH
+menu-name: "Casa de Leilão"
+listings-menu-name: "&aListagens Ativas"
+expired-menu-name: "&cListagens Canceladas / Expiradas"
+purchase-menu-name: "Confirmar Compra"
+admin-menu-name: "&l&cMenu Admin"
+category-menu-name: "&6Menu de Categorias"
+manage-listing-name: "&6Gerenciar Listagem"
+player-listing: "&b{PLAYER}'s &6Listagens"
+
+# Mensagens de chat
+item-listed: "&2Você listou &d{ITEM} &r&d(x{AMOUNT}) &2por &d{PRICE}. Digite &e/ah listings &dpara ver todas as suas listagens"
+cancelled-item: "&eVocê &6cancelou &ea leilão. Retorne itens cancelados e expirados em &6/ah expired&e."
+cancelled-purchase: "&cVocê cancelou esta compra"    #{PLAYER}, {ITEM}, {PRICE}, {AMOUNT}
+purchased-item: "&2Você comprou &d{ITEM} &r&d(x{AMOUNT}) &2por &d{PRICE}"    #{PLAYER}, {ITEM}, {PRICE}, {AMOUNT}
+seller-message: "&e{PLAYER} &bcomprou {ITEM} (x{AMOUNT}) de você por &d{PRICE}!"    #{ITEM}, {AMOUNT}
+returned-item: "&d{ITEM} &r&d(x{AMOUNT}) &2foi removido da casa de leilão"
+
+# Mensagens de erro
+in-creative: "&cVocê não pode vender itens enquanto estiver no modo criativo."
+max-listings: "&cVocê não pode ter mais de {MAX} listagens ativas."
+invalid-price: "&cPreço inválido."
+not-enough-space: "&cVocê não tem espaço suficiente no inventário para comprar este item"
+self-purchase: "&cVocê não pode comprar seus próprios itens na casa de leilão!"
+no-item: "&cVocê deve estar segurando um item na mão!"
+cannot-afford: "&cVocê não tem dinheiro suficiente para comprar este item."
+item-blacklisted: "&cEsse item não é permitido para ser colocado na casa de leilão!"
+invalid-balance: "&cVocê não tem dinheiro suficiente para listar um leilão."
+listing-gone: "&cEsta listagem não existe mais."
+price-range: "&cIntervalo de preço inválido"    #{MIN}, {MAX}
+in-cooldown: "&cVocê está atualmente em cooldown, por favor aguarde &b{M} minuto(s) &ce &b{S} segundo(s)&c."    #{M}, {S}
+player-not-found: "&cEste jogador não tem listagens ativas."
+player-listings-usage: "&cVeja suas listagens com /ah listings"
+inventory-full: "&cSeu inventário está cheio, remova alguns itens para reivindicar suas listagens."
+purchase-economy-error: "&cNão foi possível completar a transação."
+
+# Itens na interface do menu
+listed-item:
+    # {PRICE} = Preço da listagem
+    # {SELLER} = Nome do vendedor
+    # {D} = Dias, {H} = Horas, {M} = Minutos
+    - "&7-------------------------"
+    - "&aClique aqui para comprar."
+    - ""
+    - "&9Preço: &e{PRICE}"
+    - "&9Vendedor: &e{SELLER}"
+    - "&9Expira: &e{D}d {H}h {M}m"
+    - "&7-------------------------"
+your-listed-item:
+    # {PRICE} = Preço da listagem
+    # {D} = Dias, {H} = Horas, {M} = Minutos
+    - "&7-------------------------"
+    - "&cClique aqui para remover a listagem."
+    - ""
+    - "&9Preço: &e{PRICE}"
+    - "&9Expira: &e{D}d {H}h {M}m"
+    - "&7-------------------------"
+expired-item:
+    # {PRICE} = Preço da listagem
+    - "&7-------------------------"
+    - "&aClique aqui para receber o item."
+    - ""
+    - ""
+    - "&9Preço: &e{PRICE}"
+    - "&7-------------------------"
+view-listed-items:
+    # {SELLING} = Número de listagens ativas
+    name: "&6Itens que você está vendendo"
+    lore:
+        - "&aClique aqui para ver todos os itens que"
+        - "&a você está vendendo atualmente no leilão."
+        - ""
+        - "&9Vendendo: &e{SELLING}"
+view-expired-items:
+    # {EXPIRED} = Número de listagens expiradas
+    name: "&6Coletar Itens Expirados / Cancelados"
+    lore:
+      - "&r&aClique aqui para ver e coletar todos os"
+      - "&aitens que você cancelou ou que expiraram."
+      - ""
+      - "&9Itens a coletar: &e{EXPIRED}"
+
+# Menu Admin
+view-admin-menu:
+    name: "&e&k----- &r&l&c Menu Admin &r&e&k-----"
+    lore:
+        - "&r&aClique aqui para ver o menu admin."
+        #- "&aVocê pode remover itens específicos aqui."
+main-stats-admin:
+    # {PAGE} = Página atual
+    # {MAX} = Página máxima
+    # {EXPIRED} = Contagem de listagens expiradas
+    # {TOTAL} = Contagem total de listagens
+    name: "&l&cMenu Admin"
+    lore:
+        - "&aPágina {PAGE}/{MAX}"
+        - "&7Total de &b{TOTAL} &7itens"
+        - "&c(&b{EXPIRED} &citens expirados)"
+        - "Clique para atualizar a página"
+listed-item-admin:
+    # {PRICE} = Preço da listagem
+    # {SELLER} = Nome do vendedor
+    # {STATUS} = Status da listagem (Ativo/Expirado)
+    - "&7-------------------------"
+    - "&6Clique aqui para gerenciar a listagem."
+    - ""
+    - "&9Preço: &e{PRICE}"
+    - "&9Vendedor: &e{SELLER}"
+    - "&9Status: {STATUS}"
+    - "&7-------------------------"
+
+status-active: "&aAtivo"
+status-expired: "&cExpirado"
+selected-listing-name: "&l&eGerenciar Listagem"
+
+copy-item: "&bCopiar item"
+return-item: "&6Retornar item"
+delete-item: "&cDeletar item"
+
+relist-all: "&aRe-listar todos os itens"
+return-all: "&6Retornar todos os itens"
+delete-all: "&cDeletar todos os itens"
+
+# Itens de paginação
+previous-page:
+    name: "&a<- Página Anterior"
+    lore:
+        - "&7Ir para a página anterior"
+next-page:
+    name: "&aPróxima Página ->"
+    lore:
+        - "&7Ir para a próxima página"
+back-button:
+    name: "&6Voltar"
+    lore:
+
+sell-description:
+    name: "&6Como vender um item"
+    lore:
+        - "&aPara listar um item na casa de leilão, basta segurar"
+        - "&ao item na sua mão e digitar &b/ah sell <preço>&a."
+main-description:
+    name: "&6O que é esta página?"
+    lore:
+        - "&aEsta é a casa de leilão, aqui você pode"
+        - "&alistagem de itens para venda e comprar itens"
+        - "&aquais outros listaram à venda."
+        - ""
+        - "&aO leilão também é uma ótima maneira de ganhar"
+        - "&adinheiro vendendo itens agrícolas que outros"
+        - "&apodem estar interessados em comprar."
+main-stats:
+    # {PAGE} = Página atual
+    # {MAX} = Página máxima
+    # {TOTAL} = Contagem total de listagens
+    name: "&l&6Casa de Leilão"
+    lore:
+        - "&aPágina {PAGE}/{MAX}"
+        - "&7Total de &b{TOTAL} &7itens"
+        - "Clique para atualizar a página"
+listings-description:
+    name: "&6O que é esta Página?"
+    lore:
+        - "&aEstas são suas listagens atuais, todos os"
+        - "&aitens que você atualmente tem listados na"
+        - "&acasa de leilão são exibidos aqui."
+        - ""
+        - "&aVocê pode cancelar e ver o tempo de expiração"
+        - "&das suas listagens aqui."
+listings-stats:
+    # {PAGE} = Página atual
+    # {MAX} = Página máxima
+    # {TOTAL} = Contagem total de listagens
+    name: "&l&6Listagens"
+    lore:
+        - "&aPágina {PAGE}/{MAX}"
+        - "&7Total de &b{TOTAL} &7itens"
+expired-description:
+    name: "&6O que é esta página?"
+    lore:
+        - "&aEsta página contém todos os seus itens cancelados e"
+        - "&aitens que expiraram na casa de leilão."
+        - ""
+        - "&aVocê pode reivindicar esses itens para seu"
+        - "&ainventário clicando neles."
+expired-stats:
+    # {PAGE} = Página atual
+    # {MAX} = Página máxima
+    # {TOTAL} = Contagem total de listagens
+    name: "&l&6Itens Expirados"
+    lore:
+        - "&aPágina {PAGE}/{MAX}"
+        - "&7Total de &b{TOTAL} &7itens"
+        - "Clique para atualizar a página"
